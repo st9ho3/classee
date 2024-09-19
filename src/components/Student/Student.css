@@ -1,0 +1,42 @@
+.studentBody {
+    position: relative;
+    width: 15rem;
+    height: 9rem;
+    padding: .5rem;
+    background-color: white;
+    border-radius: 25px;
+    border: solid thin rgb(230, 228, 228)
+}
+.studentTop {
+    display: flex;
+    align-items: center;
+    padding: .1rem;
+}
+.studentIcon {
+    width: 2.5rem;
+    height: 2.5rem;  
+}
+.studentName {
+    height: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+.studentYear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: .7rem;
+    top: 0.5rem;
+    border-radius: 50%;
+    background-color: rgb(227, 247, 224);
+    color: rgb(38, 189, 4);
+    cursor: pointer;
+}
+.studentMid {
+    border: thin solid black;
+}

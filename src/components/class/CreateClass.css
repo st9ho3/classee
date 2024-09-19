@@ -1,0 +1,80 @@
+.inputForm {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    padding: 1rem;
+    row-gap: .5rem;
+    border: solid thin rgb(227, 227, 230);
+    border-radius: 15px;
+    background-color: rgb(224, 218, 250);
+}
+.input {
+    border: solid thin rgb(227, 227, 230);
+    border-radius: 10px;
+    width: 9rem;
+    font-family: 'Poppins', sans-serif;
+    padding: .8rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.option {
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 8.5rem;
+    height: .6rem;
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: white;
+    opacity: .95;
+    border: solid thin rgb(227, 227, 230);
+    cursor: pointer;
+}
+.formIcon {
+    margin-right: 1rem;
+    color: #877def;
+    font-size: 1.3rem;
+}
+.location {
+    border: solid thin rgb(227, 227, 230);
+    border-radius: 12px;
+    width: 8.5rem;
+    font-family: 'Poppins', sans-serif;
+    padding: .8rem;
+    background-color: white;
+    cursor: pointer;
+}
+.createClassButton {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4637f1;
+    margin: 1rem;
+    padding:1rem;
+    width: fit-content;
+    height: 1.3rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgb(255, 254, 254);
+}
+.closeClassForm {
+    position: absolute;
+    top: -.5rem;
+    right: -.5rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    color: white;
+    cursor: pointer;
+}
+.closeClassForm:hover {
+    transform: translateY(-.1rem);
+    transition: .7s;
+}

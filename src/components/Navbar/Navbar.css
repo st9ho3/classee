@@ -1,0 +1,40 @@
+.NavBar {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 3rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0 10px 10px 0;
+    border: solid thin rgb(208, 204, 243);
+    
+}
+.NavBar:hover {
+    opacity: 1;
+    background-color: rgb(241, 241, 248);
+    transition: .7s;
+
+}
+.navOpt {
+    margin-top: 1rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(139, 142, 237);
+  }
+  .navOpt:hover {
+    transition: .7s;
+    
+  }
+  .teacherBoardIcon {
+    width: 1.8rem;
+    height: 1.8rem;
+    color: white;
+    margin-left: .2rem;
+  }

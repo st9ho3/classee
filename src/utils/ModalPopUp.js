@@ -1,0 +1,1 @@
+export const popUp = {backgroundColor: 'rgb(139, 142, 237)'}
