@@ -2,7 +2,7 @@ import React from 'react'
 
 const Class = () => {
   return (
-    <div className='class'>
+    <div className='Myclass'>
       
     </div>
   )

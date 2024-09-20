@@ -1,4 +1,4 @@
-import {Student, Class, Header, Main, Store, Navbar, Classes} from "./constants/Components"
+import { Main, Navbar, Classes} from "./constants/Components"
 import CreateClass from "./components/Class/CreateClass"
 import { createContext, useState } from "react"
 import { popUp } from "./utils/ModalPopUp"

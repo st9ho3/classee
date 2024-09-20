@@ -6,7 +6,7 @@ const Classes = () => {
   return (
     <div className='classes'>
       {saved.map((sav) => (
-        <div className="class">{sav.name}</div>
+        <div key={sav.classId} className="class">{sav.name}</div>
       ))}
     </div>
   )

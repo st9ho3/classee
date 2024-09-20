@@ -1,15 +1,19 @@
 .classes {
-    width: 40rem;
-    height: 30rem;
-    border: solid thin black;
+    padding: 1rem;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    border: solid thin rgb(232, 233, 247);
+    border-radius: 15px;
     
 }
 .class {
-    width: 3rem;
-    height: fit-content;
-    overflow: hidden;
-    background-color: aqua;
+    position: relative;
+    width: 15rem;
+    height: 9rem;
+    padding: .5rem;
+    background-color: white;
+    border-radius: 25px;
+    border: solid thin rgb(232, 233, 247);
     margin-left: 3.8rem;
 }
