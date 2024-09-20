@@ -1,0 +1,10 @@
+.classes {
+    width: 40rem;
+    height: 30rem;
+    border: solid thin black;
+}
+.class {
+    width: 3rem;
+    height: 3rem;
+    border: solid thin black;
+}

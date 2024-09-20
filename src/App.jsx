@@ -24,6 +24,7 @@ function App() {
         <Navbar />
         <Main>
           {page.CreateClass && <CreateClass/>}
+          {page.Classes && <Classes />}
         </Main>
       </div>
     </totalContext.Provider>

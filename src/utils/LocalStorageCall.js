@@ -1,5 +1,5 @@
 export const localStorageCall = (Goods) => {
-   const storedArray = localStorage.getItem(`${Goods}`)
+   const storedArray = localStorage.getItem(Goods)
    const arrayReadyToUse = storedArray ? JSON.parse(storedArray) : []
    return arrayReadyToUse
 }

@@ -17,6 +17,9 @@ import Product from "../components/Store/Product";
 import ProductText from "../components/Store/ProductText";
 import Navbar from "../components/Navbar/Navbar";
 import Classes from "../components/class/Classes";
+import CreateClassOption from "../components/Navbar/CreateClassOption";
+import ClassesOption from "../components/Navbar/ClassesOption";
+
 
 
 export {
@@ -38,5 +41,7 @@ export {
     Product,
     ProductText,
     Navbar,
-    Classes
+    Classes,
+    CreateClassOption,
+    ClassesOption
 }
