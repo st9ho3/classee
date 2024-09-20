@@ -2,7 +2,8 @@
     padding: 1rem;
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
     border: solid thin rgb(232, 233, 247);
     border-radius: 15px;
     
