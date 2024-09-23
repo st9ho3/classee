@@ -9,6 +9,8 @@ import './components/Main/Main.css'
 import './components/Store/Store.css'
 import './components/Class/CreateClass.css'
 import './components/Navbar/Navbar.css'
+import './components/RegLog/RegLog.css'
+import './components/General/General.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

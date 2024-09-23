@@ -1,4 +1,15 @@
 .form {
+    border: solid thin black;
+    top: 5rem;
+    position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    padding: 1rem;
+    row-gap: .5rem;
+    border: solid thin rgb(227, 227, 230);
+    border-radius: 15px;
+    background-color: rgb(224, 218, 250);
 }

@@ -21,7 +21,7 @@ import CreateClassOption from "../components/Navbar/CreateClassOption";
 import ClassesOption from "../components/Navbar/ClassesOption";
 import Form from "../components/RegLog/Form";
 import Registration from "../components/RegLog/Registration";
-
+import ToggleSwitch from "../components/General/ToggleSwitch";
 
 
 export {
@@ -47,5 +47,6 @@ export {
     CreateClassOption,
     ClassesOption,
     Form,
-    Registration
+    Registration,
+    ToggleSwitch
 }
