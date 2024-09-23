@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { totalContext } from '../../App';
 import {ClassesOption, CreateClassOption} from '../../constants/Components'
+import RegistrationOption from './RegistrationOption';
 
 const Navbar = () => {
   
@@ -15,6 +16,8 @@ const Navbar = () => {
      />
     <ClassesOption
      /> 
+     <RegistrationOption
+    />
     </div>
   );
 };

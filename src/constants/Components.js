@@ -19,6 +19,8 @@ import Navbar from "../components/Navbar/Navbar";
 import Classes from "../components/class/Classes";
 import CreateClassOption from "../components/Navbar/CreateClassOption";
 import ClassesOption from "../components/Navbar/ClassesOption";
+import Form from "../components/RegLog/Form";
+import Registration from "../components/RegLog/Registration";
 
 
 
@@ -43,5 +45,7 @@ export {
     Navbar,
     Classes,
     CreateClassOption,
-    ClassesOption
+    ClassesOption,
+    Form,
+    Registration
 }

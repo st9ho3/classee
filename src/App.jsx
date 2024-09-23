@@ -1,4 +1,4 @@
-import { Main, Navbar, Classes} from "./constants/Components"
+import { Main, Navbar, Classes, Registration} from "./constants/Components"
 import CreateClass from "./components/Class/CreateClass"
 import { createContext, useState } from "react"
 import { popUp } from "./utils/ModalPopUp"
@@ -26,6 +26,7 @@ function App() {
         <Main>
           {page.CreateClass && <CreateClass/>}
           {page.Classes && <Classes />}
+          {page.Registration && <Registration />}
           <button onClick={() => register('stahos1993@gmail.com','1993','Professor')} style={{width: '3rem', height: '1rem'}}></button>
           <button onClick={() => login('stahos1993@gmail.com','1993')} style={{width: '3rem', height: '1rem'}}></button>
           <button onClick={logout} style={{width: '3rem', height: '1rem'}}></button>
