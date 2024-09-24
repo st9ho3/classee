@@ -19,6 +19,8 @@
 
 }
 .navOpt {
+  display: flex;
+  flex-direction: column;
     margin-top: 1rem;
     width: 2.3rem;
     height: 2.3rem;
@@ -38,3 +40,14 @@
     color: white;
     margin-left: .2rem;
   }
+
+.navOpt.init {
+  width: 15rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+}
+.teacherBoardIcon.init {
+  width: 10rem;
+  height: 10rem;
+}

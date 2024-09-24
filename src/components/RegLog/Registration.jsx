@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Form, ToggleSwitch } from '../../constants/Components';
 import { register } from '../../utils/Auth';
 import { PiStudent } from 'react-icons/pi';
 import { GiTeacher } from 'react-icons/gi';
+import { totalContext } from '../../App';
 
 const Registration = () => {
+  const {page, toggle, close} = useContext(totalContext)
   const [isStudent, setIsStudent] = useState(false);
   const [user, setUser] = useState({
     Email: '',
@@ -26,6 +28,8 @@ const Registration = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     register(user);
+    toggle('Login')
+    close('Registration')
     setUser({
       Email: '',
       Password: '',

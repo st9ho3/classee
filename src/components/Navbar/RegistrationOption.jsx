@@ -6,7 +6,7 @@ const RegistrationOption = () => {
     const { toggle, page, close } = useContext(totalContext);
   return (
     <div
-        className="navOpt"
+        className="navOpt init"
         onClick={() => (page.Registration ? close() : toggle('Registration'))}
         style={
           page.Registration
@@ -15,13 +15,17 @@ const RegistrationOption = () => {
         }
       >
         <MdAccountCircle
-          className="teacherBoardIcon"
+          className="teacherBoardIcon init"
           style={
             page.Registration
               ? { color: 'rgb(139, 142, 237)' }
               : { color: 'white' }
           }
         />
+        <h2 style={
+            page.Registration
+              ? { color: 'rgb(139, 142, 237)' }
+              : { color: 'white' }} >Please Register</h2>
       </div>
   )
 }

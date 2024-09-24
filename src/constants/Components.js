@@ -22,6 +22,12 @@ import ClassesOption from "../components/Navbar/ClassesOption";
 import Form from "../components/RegLog/Form";
 import Registration from "../components/RegLog/Registration";
 import ToggleSwitch from "../components/General/ToggleSwitch";
+import Login from "../components/RegLog/Login";
+import LoggedUser from "../components/LoggedUser";
+import CreateClass from "../components/class/CreateClass";
+import RegistrationOption from "../components/Navbar/RegistrationOption";
+import LoginOption from "../components/Navbar/LoginOption";
+
 
 
 export {
@@ -48,5 +54,10 @@ export {
     ClassesOption,
     Form,
     Registration,
-    ToggleSwitch
+    ToggleSwitch,
+    Login,
+    LoggedUser,
+    CreateClass,
+    RegistrationOption,
+    LoginOption
 }

@@ -16,8 +16,7 @@ const Navbar = () => {
      />
     <ClassesOption
      /> 
-     <RegistrationOption
-    />
+
     </div>
   );
 };
