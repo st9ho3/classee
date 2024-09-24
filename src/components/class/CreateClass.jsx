@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ClassForm } from '../../constants/Components';
 import { createDate } from '../../utils/CreateDate';
-import { localStorageCall, localStorageSend } from '../../utils/LocalStorageCall';
+import { updateClasses } from '../../utils/LocalStorageCall';
 import { nanoid } from 'nanoid';
 import { capitalizeWord } from '../../utils/StringCheck';
 
@@ -21,8 +21,6 @@ const CreateClass = () => {
     location: '',
     classSizeLimit: 0,
   });
-
-  const [classes, setClasses] = useState(() => localStorageCall('Classes'));
   const [subjects, setSubjects] = useState([]);
 
   const handleInput = (e) => {
@@ -36,7 +34,7 @@ const CreateClass = () => {
   };
 
   const createClass = () => {
-    setClasses([...classes, classDetails]);
+    updateClasses(classDetails)
     setClassDetails({
       classId: nanoid(),
       name: '',
@@ -54,17 +52,12 @@ const CreateClass = () => {
   };
 
   useEffect(() => {
-    localStorageSend('Classes', classes);
-  }, [classes]);
-
-  useEffect(() => {
     setClassDetails({
       ...classDetails,
       subject: subjects,
       dateCreated: dateOfCreation,
-      dateUpdated: dateOfCreation,
-    });
-  }, [subjects]);
+      dateUpdated: dateOfCreation
+    })}, [subjects]);
 
   return (
     <>

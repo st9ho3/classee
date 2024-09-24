@@ -21,6 +21,6 @@ export const login = (email, password) => {
     : console.error('User not found');
 };
 
-export const logout = () => {
-    localStorageSend(AUTH_KEY, [])
+export const logout = (authuser) => {
+    localStorageSend(AUTH_KEY, authuser)
 }

@@ -4,7 +4,7 @@
   margin: 0;
 }
 body { 
-background-color: rgb(238, 239, 233);
+background-color: rgb(247, 247, 246);
 font-family: 'Poppins', sans-serif;
 overflow-y: hidden;
 }
@@ -43,6 +43,7 @@ input {
     cursor: pointer;
 }
 form{
+    top: 5rem;
     left: 30rem;
     position: absolute;
     display: flex;
@@ -55,5 +56,10 @@ form{
     border: solid thin rgb(227, 227, 230);
     border-radius: 15px;
     background-color: rgb(224, 218, 250);
+}
+.authUserReminder {
+  position: absolute;
+  right: 2rem;
+  font-size: .8rem;
 }
 

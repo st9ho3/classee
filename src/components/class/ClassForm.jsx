@@ -26,7 +26,7 @@ const ClassForm = ({ handleInput, classDetails, create, chooseSubject }) => {
 
   return (
     <>
-      <form 
+      <form className='createClassForm'
         onSubmit={handleSubmit}>
         <input
           required

@@ -1,12 +1,13 @@
-import { LoggedUser, Registration, RegistrationOption, Login, LoginOption } from "./constants/Components";
+import { LoggedUser, Registration, RegistrationOption, Login, LoginOption,LogoutOption } from "./constants/Components";
 import { createContext, useEffect, useState } from "react";
-import { register, login, logout } from "./utils/Auth";
+import { logout } from "./utils/Auth";
 import { localStorageCall } from "./utils/LocalStorageCall";
 
 export const totalContext = createContext();
 
 function App() {
-  const [authUser, setAuthUser] = useState(false);
+  const AUTH = localStorage.getItem('auth_user') ? localStorageCall('auth_user') : false
+  const [authUser, setAuthUser] = useState(AUTH);
   const [page, setPage] = useState(false);
 
   const toggle = (name) => {
@@ -17,13 +18,12 @@ function App() {
     setPage({ [name]: false });
   };
   useEffect(() => {
-   const AUTH = localStorage.getItem('auth_user') ? localStorageCall('auth_user') : false
-   setAuthUser(AUTH)
-  },[])
-
+    logout(authUser)
+  }, [authUser])
+  
 
   return (
-    <totalContext.Provider value={{ toggle, page, close }}>
+    <totalContext.Provider value={{ toggle, page, close, authUser }}>
       <div
         className="layout"
         style={
@@ -41,6 +41,7 @@ function App() {
         {page.Registration && <Registration />}
         {page.Login && <Login />}
         {authUser  && <LoggedUser />}
+        {authUser && <LogoutOption setAuthUser={setAuthUser} />}
       </div>
     </totalContext.Provider>
   );

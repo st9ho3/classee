@@ -27,7 +27,7 @@ import LoggedUser from "../components/LoggedUser";
 import CreateClass from "../components/class/CreateClass";
 import RegistrationOption from "../components/Navbar/RegistrationOption";
 import LoginOption from "../components/Navbar/LoginOption";
-
+import LogoutOption from "../components/Navbar/LogoutOption";
 
 
 export {
@@ -59,5 +59,6 @@ export {
     LoggedUser,
     CreateClass,
     RegistrationOption,
-    LoginOption
+    LoginOption,
+    LogoutOption
 }
