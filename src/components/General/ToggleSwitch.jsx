@@ -6,7 +6,7 @@ const ToggleSwitch = ({ value, onChange }) => {
   };
 
   return (
-    <div className="toggle-switch" onClick={switchOn}>
+    <div className="toggle-switch" onClick={switchOn} >
       <div className={`switch ${value ? 'on' : ''}`}>
         <div className="slider"></div>
       </div>

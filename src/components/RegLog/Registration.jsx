@@ -1,20 +1,62 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Form, ToggleSwitch } from '../../constants/Components';
+import { register } from '../../utils/Auth';
 import { PiStudent } from 'react-icons/pi';
 import { GiTeacher } from 'react-icons/gi';
 
 const Registration = () => {
   const [isStudent, setIsStudent] = useState(false);
+  const [user, setUser] = useState({
+    Email: '',
+    Password: '',
+    Type: 'Professor',
+    Classes: [],
+  });
 
   const handleToggle = (value) => {
     setIsStudent(value);
   };
 
+  const handleInput = (e) => {
+    const { type, value, name } = e.target;
+    const details = type === 'email' || type === 'password' ? value : value;
+    setUser({ ...user, [name]: details });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    register(user);
+    setUser({
+      Email: '',
+      Password: '',
+      Type: '',
+      Classes: [],
+    });
+  };
+
+  useEffect(() => {
+    const accType = isStudent ? 'Student' : 'Professor';
+    setUser({ ...user, Type: accType });
+  }, [isStudent]);
+  
+
   return (
     <div className="registration">
-      <Form>
-        <input placeholder="Email" type="text" />
-        <input placeholder="Password" type="text" />
+      <Form handleSubmit={handleSubmit}>
+        <input
+          onChange={handleInput}
+          value={user.Email}
+          name="Email"
+          placeholder="Email"
+          type="email"
+        />
+        <input
+          onChange={handleInput}
+          value={user.Password}
+          name="Password"
+          placeholder="Password"
+          type="password"
+        />
         <div className="studentOption">
           <ToggleSwitch value={isStudent} onChange={handleToggle} />
           {isStudent ? (

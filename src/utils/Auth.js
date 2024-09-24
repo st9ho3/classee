@@ -4,13 +4,7 @@ const AUTH_KEY = 'auth_user';
 
 const users = localStorageCall('Users') ? localStorageCall('Users') : [];
 
-export const register = (email, password, role) => {
-  const user = {
-    User_email: email,
-    User_password: password,
-    User_role: role,
-  };
-  
+export const register = (user) => {
   users.push(user);
   localStorageSend('Users', users);
   console.log(users);
