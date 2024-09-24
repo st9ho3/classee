@@ -9,7 +9,7 @@
     width: 2rem;
     height: 1rem;
     padding: .1rem;
-    background-color: #190ae9;
+    background-color: #6f37f1;
     border-radius: 15px;
     position: relative;
     transition: background-color 0.3s ease;
@@ -24,6 +24,7 @@
     height: .9rem;
     background-color: white;
     border-radius: 50%;
+    position: absolute;
     top: 2px;
     left: 2px;
     transition: transform 0.3s ease;

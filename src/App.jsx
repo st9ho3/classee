@@ -21,7 +21,7 @@ function App() {
 
   return (
     <totalContext.Provider value={{toggle, page, close}}>
-      <div style={page.CreateClass ? popUp : null} className="layout">
+      <div /* style={page.CreateClass ? popUp : null}  */className="layout">
         <Navbar />
         <Main>
           {page.CreateClass && <CreateClass/>}

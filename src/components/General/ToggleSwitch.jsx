@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const ToggleSwitch = ({ value, onChange }) => {
   const switchOn = () => {
     onChange(!value);

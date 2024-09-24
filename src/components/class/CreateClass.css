@@ -1,26 +1,3 @@
-.inputForm {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 12rem;
-    padding: 1rem;
-    row-gap: .5rem;
-    border: solid thin rgb(227, 227, 230);
-    border-radius: 15px;
-    background-color: rgb(224, 218, 250);
-}
-.input {
-    border: solid thin rgb(227, 227, 230);
-    border-radius: 10px;
-    width: 9rem;
-    font-family: 'Poppins', sans-serif;
-    padding: .8rem;
-    background-color: white;
-    cursor: pointer;
-}
-
 .option {
     
     display: flex;
@@ -48,22 +25,6 @@
     padding: .8rem;
     background-color: white;
     cursor: pointer;
-}
-.createClassButton {
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #4637f1;
-    margin: 1rem;
-    padding:1rem;
-    width: fit-content;
-    height: 1.3rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color: rgb(255, 254, 254);
 }
 .closeClassForm {
     position: absolute;
