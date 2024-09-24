@@ -9,7 +9,7 @@ const Classes = () => {
   return (
     <div className='classes'>
       {classes.map(classItem => (
-        <div key={classItem.classId}>{classItem.name}</div>
+        <div className='class' key={classItem.classId}>{classItem.name}</div>
       ))}
     </div>
   )

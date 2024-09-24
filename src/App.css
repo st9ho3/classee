@@ -59,7 +59,8 @@ form{
 }
 .authUserReminder {
   position: absolute;
-  right: 2rem;
+  top: -1.5rem;
+  right: 0;
   font-size: .8rem;
 }
 

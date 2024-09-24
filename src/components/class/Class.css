@@ -4,8 +4,8 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1rem;
-    border: solid thin rgb(232, 233, 247);
-    border-radius: 15px;
+    padding-top: 2rem;
+    padding-right: 6rem;
     
 }
 .class {

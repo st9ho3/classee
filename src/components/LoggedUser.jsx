@@ -10,7 +10,6 @@ const LoggedUser = () => {
       <div style={page.CreateClass ? popUp : null}>
         <Navbar />
         <Main>
-          <h4 className='authUserReminder'>{authUser.Email}</h4>
           {page.CreateClass && <CreateClass/>}
           {page.Classes && <Classes />}
         </Main>
