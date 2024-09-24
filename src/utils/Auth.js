@@ -13,11 +13,10 @@ export const register = (user) => {
 export const login = (email, password) => {
   const users = localStorageCall('Users');
   const user = users.find(
-    (user) => user.User_email === email && user.User_password === password
+    (user) => user.Email === email && user.Password=== password
   );
-  const auth_user = []
-  auth_user.push(user)
-  auth_user 
+  const auth_user = user
+  user 
     ? localStorageSend(AUTH_KEY, auth_user)
     : console.error('User not found');
 };

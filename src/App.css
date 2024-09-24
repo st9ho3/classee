@@ -43,7 +43,6 @@ input {
     cursor: pointer;
 }
 form{
-  border: solid thin black;
     top: 5rem;
     position: relative;
     display: flex;

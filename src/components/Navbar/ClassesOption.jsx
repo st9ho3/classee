@@ -7,7 +7,7 @@ const ClassesOption = () => {
   return (
     <div
         className="navOpt"
-        onClick={() => (page.Classes ? close() : toggle('Classes'))}
+        onClick={() => (page.Classes ? close('Classes') : toggle('Classes'))}
         style={
           page.Classes
             ? { backgroundColor: 'white', border: 'solid thin rgb(139, 142, 237)' }
