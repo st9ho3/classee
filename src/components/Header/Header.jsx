@@ -2,10 +2,11 @@ import React, { useContext } from 'react'
 import { totalContext } from '../../App'
 
 const Header = () => {
-  const {authUser} = useContext(totalContext)
+  const {authUser, page} = useContext(totalContext)
   return (
     <div className='header'>
-      <h4 className='authUserReminder'>Welcome {authUser.Email.slice(0,4)}</h4>
+      <h1 className='title'>{page.Classes ? 'My Classes' : page.Students ? 'My Students' : null }</h1>
+      <h4 className='authUserReminder'>Welcome {authUser.UserName}</h4>
     </div>
   )
 }

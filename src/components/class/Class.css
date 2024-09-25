@@ -19,6 +19,7 @@
     border-radius: 25px;
     border: solid thin rgb(232, 233, 247);
     margin-left: 3.8rem;
+    cursor: pointer;
 }
 .class:hover {
     transform: translateY(-.1rem);

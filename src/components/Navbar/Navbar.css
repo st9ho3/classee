@@ -1,6 +1,6 @@
 .NavBar {
     position: absolute;
-    top: 6rem;
+    top: 10rem;
     left: 0;
     width: 3rem;
     height: 20rem;
@@ -9,14 +9,8 @@
     align-items: center;
     overflow: hidden;
     border-radius: 0 10px 10px 0;
-    border: solid thin rgb(208, 204, 243);
+    background-color: rgb(244, 247, 249);
     
-}
-.NavBar:hover {
-    opacity: 1;
-    background-color: rgb(241, 241, 248);
-    transition: .7s;
-
 }
 .navOpt {
   flex-direction: column;

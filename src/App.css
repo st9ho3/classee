@@ -4,7 +4,7 @@
   margin: 0;
 }
 body { 
-background-color: rgb(247, 247, 246);
+background-color: white;
 font-family: 'Poppins', sans-serif;
 overflow-y: hidden;
 }
@@ -44,7 +44,7 @@ input {
     cursor: pointer;
 }
 form{
-    top: 5rem;
+    top: 9rem;
     left: 30rem;
     position: absolute;
     display: flex;
@@ -60,8 +60,8 @@ form{
 }
 .authUserReminder {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 3.5rem;
+  right: 1rem;
   font-size: .8rem;
 }
 .mainDashboard {

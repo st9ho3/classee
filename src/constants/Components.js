@@ -30,6 +30,8 @@ import LoginOption from "../components/Navbar/LoginOption";
 import LogoutOption from "../components/Navbar/LogoutOption";
 import StudentNumber from "../components/class/StudentNumber";
 import Location from "../components/class/Location";
+import StudentsOption from '../components/Navbar/StudentsOption'
+import MyStudents from "../components/Student/MyStudents";
 
 
 export {
@@ -64,5 +66,7 @@ export {
     LoginOption,
     LogoutOption,
     StudentNumber,
-    Location
+    Location,
+    StudentsOption,
+    MyStudents
 }

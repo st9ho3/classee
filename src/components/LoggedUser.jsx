@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import {Navbar, CreateClass, Classes, Main, Header} from '../constants/Components'
+import {Navbar, CreateClass, Classes, Main, Header, MyStudents} from '../constants/Components'
 import { totalContext } from '../App'
 import {popUp} from '../utils/ModalPopUp'
 
@@ -9,10 +9,11 @@ const LoggedUser = () => {
     <div className='mainDashboard'>
       <div>
         <Navbar />
-        <Header />
+        {page.CreateClass || page.Classes || page.Students ? <Header /> : null}
         <Main>
-          {page.CreateClass && <CreateClass/>}
+          {page.CreateClass && authUser.Type === 'Professor' && <CreateClass/>}
           {page.Classes && <Classes />}
+          {page.Students && authUser.Type === 'Professor' && <MyStudents />}
         </Main>
       </div>
     </div>

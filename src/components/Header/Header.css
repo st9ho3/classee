@@ -1,5 +1,12 @@
 .header {
-    
-    height: 11vh;
+    display: flex;
+    height: 15vh;
     position: relative;
+    border-radius: 12px;
+    background-color: rgb(244, 247, 249);
+}
+.title {
+    margin-top: .5rem;
+    margin-left: 2rem;
+    color: black;
 }

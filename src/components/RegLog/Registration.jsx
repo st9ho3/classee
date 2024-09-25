@@ -30,7 +30,7 @@ const Registration = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    register(user);
+    register(user,isStudent);
     toggle('Login')
     close('Registration')
     setUser({

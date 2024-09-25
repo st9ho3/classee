@@ -33,7 +33,7 @@ function App() {
   useEffect(() => {
     logout(authUser);
   }, [authUser]);
-
+console.log(page)
   return (
     <totalContext.Provider value={{ toggle, page, close, authUser }}>
       <div
