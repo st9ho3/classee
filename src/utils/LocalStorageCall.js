@@ -9,9 +9,10 @@ export const localStorageCall = (Goods) => {
  };
  
  export const updateClasses = (newClass) => {
-   const users = localStorageCall('Users');
+   const users = localStorageCall('Professors');
    const authUser = localStorageCall('auth_user');
- 
+   const students = localStorageCall('Students')
+  
    const wantedUser = users.filter(
      (user) => user.Email === authUser.Email && user.Password === authUser.Password
    )[0];
@@ -23,6 +24,6 @@ export const localStorageCall = (Goods) => {
    wantedUser.Classes.push(newClass);
    newUsers.push(wantedUser);
  
-   localStorageSend('Users', newUsers);
+   localStorageSend('Professors', newUsers);
    localStorageSend('auth_user', wantedUser);
  };

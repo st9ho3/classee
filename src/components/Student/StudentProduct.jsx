@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { classContext } from '../class/CreateClass'
 
-const StudentProduct = ({children}) => {
+
+const StudentProduct = ({children, id}) => {
+const {tempStudentIds, getIds} = useContext(classContext)
   return (
-    <div className="studentOption">
+    <div className="studentOption" onClick={() => getIds(id)}>
                 {children}    
                 </div>
   )

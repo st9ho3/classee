@@ -5,8 +5,10 @@ import { PiStudent } from 'react-icons/pi';
 import { GrSchedule } from 'react-icons/gr';
 import { IoClose } from 'react-icons/io5';
 import { totalContext } from '../../App';
+import { classContext } from '../class/CreateClass';
 
-const ClassForm = ({ handleInput, classDetails, create, chooseSubject }) => {
+const ClassForm = () => {
+  const {handleInput, classDetails, create, chooseSubject} = useContext(classContext)
   const { close } = useContext(totalContext);
   const [clicked, setClicked] = useState({});
 

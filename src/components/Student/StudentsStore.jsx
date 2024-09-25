@@ -5,7 +5,7 @@ import { localStorageCall } from '../../utils/LocalStorageCall';
 
 const StudentsStore = ({closeStore}) => {
     const students = localStorageCall('Students')
-
+  
   return (
     <div className='store'>
       <IoClose className='closeButton' onClick={ (e) =>{
@@ -15,7 +15,9 @@ const StudentsStore = ({closeStore}) => {
           goods={students}
           type='bigger'>
             {students.map((student) => (
-                <StudentProduct key={student.UserId}>
+                <StudentProduct
+                 key={student.UserId}
+                 id = {student.UserId}>
                     <StudentIcon
                     type="store" />
                     <div className="studentTitle">

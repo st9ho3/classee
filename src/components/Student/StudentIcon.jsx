@@ -1,11 +1,11 @@
-import React from 'react'
+import React,{useRef} from 'react'
 
 const StudentIcon = ({type}) => {
-  const randomNumber = Math.ceil(Math.random()*7)
-  console.log(randomNumber)
+  const randomNumber = useRef(Math.ceil(Math.random()*7))
+  
   return (
     <div>
-      <img className={type === 'store' ? 'studentIcon storeIcon' : 'studentIcon'} src={`boy`+randomNumber+`.png`} alt="student-icon" />
+      <img className={type === 'store' ? 'studentIcon storeIcon' : 'studentIcon'} src={`boy`+randomNumber.current+`.png`} alt="student-icon" />
     </div>
   )
 }

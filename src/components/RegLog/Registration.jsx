@@ -15,7 +15,7 @@ const Registration = () => {
     Email: '',
     Password: '',
     Type: 'Professor',
-    Classes: [],
+    Classes: []
   });
 
   const handleToggle = (value) => {
@@ -37,16 +37,16 @@ const Registration = () => {
       Email: '',
       Password: '',
       Type: '',
-      Classes: [],
+      Classes: []
     });
   };
 
   useEffect(() => {
     const accType = isStudent ? 'Student' : 'Professor';
-    setUser({ ...user, Type: accType });
+    setUser({ ...user, Type: accType, ...(isStudent && {Invitations: []}) });
   }, [isStudent]);
   
-console.log(user)
+
   return (
     <div className="registration">
       <Form handleSubmit={handleSubmit}>
