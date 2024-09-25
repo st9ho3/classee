@@ -12,11 +12,11 @@
     align-items: center;
     cursor: pointer;
     width: 5rem;
-    height: fit-content;
+    height: 4rem;
     overflow: hidden;
 }
 .studentOption:hover .storeIcon{
-    transform: translateY(-.2rem);
+    transform: translateY(-.1rem);
     transition: .6s;
 }
 .studentTitle{

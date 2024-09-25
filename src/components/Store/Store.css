@@ -36,6 +36,8 @@
 .showroom.bigger {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    row-gap: 0;
+    column-gap: 0;
 }
 .closeButton {
     position: absolute;
