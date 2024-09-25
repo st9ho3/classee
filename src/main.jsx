@@ -11,6 +11,7 @@ import './components/Class/CreateClass.css'
 import './components/Navbar/Navbar.css'
 import './components/RegLog/RegLog.css'
 import './components/General/General.css'
+import './components/Student/StudentsStore.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

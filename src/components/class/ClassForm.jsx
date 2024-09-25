@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Store } from '../../constants/Components';
+import { StudentsStore, Store } from '../../constants/Components';
 import { GiOpenBook } from 'react-icons/gi';
 import { PiStudent } from 'react-icons/pi';
 import { GrSchedule } from 'react-icons/gr';
@@ -68,10 +68,9 @@ const ClassForm = ({ handleInput, classDetails, create, chooseSubject }) => {
           Students
         </div>
         {clicked.Students && (
-          <Store 
-            closeStore={closeStore} 
-            Goods='Students' 
-          />
+          <StudentsStore
+          closeStore={closeStore} 
+           />
         )}
 
         <div

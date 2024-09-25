@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Showroom = ({children,goods}) => {
+const Showroom = ({children,goods, type}) => {
   return (
     <div
-     className='showroom'
+     className={type === 'bigger' ? 'showroom bigger' : 'showroom'}
      style={goods.length <= 15 ? {overflowY: 'hidden'} : {overflowY: 'scroll'}} >
       {children}
     </div>

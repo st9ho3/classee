@@ -1,9 +1,9 @@
 import React from 'react'
 
-const StudentIcon = () => {
+const StudentIcon = ({type}) => {
   return (
     <div>
-      <img className='studentIcon' src="boy.png" alt="student-icon" />
+      <img className={type === 'store' ? 'studentIcon storeIcon' : 'studentIcon'} src="vite.svg" alt="student-icon" />
     </div>
   )
 }

@@ -32,6 +32,8 @@ import StudentNumber from "../components/class/StudentNumber";
 import Location from "../components/class/Location";
 import StudentsOption from '../components/Navbar/StudentsOption'
 import MyStudents from "../components/Student/MyStudents";
+import StudentsStore from "../components/Student/StudentsStore";
+import StudentProduct from "../components/Student/StudentProduct" 
 
 
 export {
@@ -68,5 +70,7 @@ export {
     StudentNumber,
     Location,
     StudentsOption,
-    MyStudents
+    MyStudents,
+    StudentsStore,
+    StudentProduct
 }

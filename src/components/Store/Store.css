@@ -25,14 +25,17 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: start;
-    row-gap: .6rem;
-    column-gap: .3rem;
+    row-gap: .4rem;
+    column-gap: .2rem;
     width: 90%;
     height: 70%;
     padding: 1.5rem;
     overflow-y: scroll;
-    overflow-x: hidden;
-    
+    overflow-x: hidden; 
+}
+.showroom.bigger {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 .closeButton {
     position: absolute;
