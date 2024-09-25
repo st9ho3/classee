@@ -1,9 +1,16 @@
 import React from 'react'
+import {StudentNumber, Location} from '../../constants/Components'
 
-const Class = () => {
+const Class = ({item}) => {
+
   return (
-    <div className='Myclass'>
-      
+    <div className='class'>
+      <div key={item.classId}>
+        <h3 className='classTitle'>{item.name}</h3>
+        <StudentNumber item={item}/>
+        <hr className='border'/>
+        {item.location === 'Online' && <Location item={item} />}
+      </div>
     </div>
   )
 }

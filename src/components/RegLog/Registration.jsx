@@ -4,11 +4,14 @@ import { register } from '../../utils/Auth';
 import { PiStudent } from 'react-icons/pi';
 import { GiTeacher } from 'react-icons/gi';
 import { totalContext } from '../../App';
+import {nanoid} from 'nanoid'
 
 const Registration = () => {
   const {page, toggle, close} = useContext(totalContext)
   const [isStudent, setIsStudent] = useState(false);
   const [user, setUser] = useState({
+    UserId: nanoid(),
+    UserName: '',
     Email: '',
     Password: '',
     Type: 'Professor',
@@ -21,7 +24,7 @@ const Registration = () => {
 
   const handleInput = (e) => {
     const { type, value, name } = e.target;
-    const details = type === 'email' || type === 'password' ? value : value;
+    const details = type === 'email' || type === 'password' || type === 'text' ? value : value;
     setUser({ ...user, [name]: details });
   };
 
@@ -43,10 +46,17 @@ const Registration = () => {
     setUser({ ...user, Type: accType });
   }, [isStudent]);
   
-
+console.log(user)
   return (
     <div className="registration">
       <Form handleSubmit={handleSubmit}>
+      <input
+          onChange={handleInput}
+          value={user.UserName}
+          name="UserName"
+          placeholder="Username"
+          type="text"
+        />
         <input
           onChange={handleInput}
           value={user.Email}

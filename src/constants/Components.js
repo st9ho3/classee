@@ -7,7 +7,7 @@ import StudentBot from "../components/Student/StudentBot"
 import StudentName from "../components/Student/StudentName";
 import StudentYear from "../components/Student/StudentYear";
 import StudentPerformance from "../components/Student/StudentPerformance"
-import Class from "../components/Class/Class";
+import Class from "../components/class/Class";
 import Header from "../components/Header/Header"
 import Main from "../components/Main/Main"
 import Store from "../components/Store/Store"
@@ -28,6 +28,8 @@ import CreateClass from "../components/class/CreateClass";
 import RegistrationOption from "../components/Navbar/RegistrationOption";
 import LoginOption from "../components/Navbar/LoginOption";
 import LogoutOption from "../components/Navbar/LogoutOption";
+import StudentNumber from "../components/class/StudentNumber";
+import Location from "../components/class/Location";
 
 
 export {
@@ -60,5 +62,7 @@ export {
     CreateClass,
     RegistrationOption,
     LoginOption,
-    LogoutOption
+    LogoutOption,
+    StudentNumber,
+    Location
 }

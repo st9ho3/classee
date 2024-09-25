@@ -1,14 +1,15 @@
 import React, { useContext } from 'react'
-import {Navbar, CreateClass, Classes, Main} from '../constants/Components'
+import {Navbar, CreateClass, Classes, Main, Header} from '../constants/Components'
 import { totalContext } from '../App'
 import {popUp} from '../utils/ModalPopUp'
 
 const LoggedUser = () => {
     const {page, authUser} = useContext(totalContext)
   return (
-    <div>
-      <div style={page.CreateClass ? popUp : null}>
+    <div className='mainDashboard'>
+      <div>
         <Navbar />
+        <Header />
         <Main>
           {page.CreateClass && <CreateClass/>}
           {page.Classes && <Classes />}

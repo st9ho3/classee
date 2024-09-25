@@ -1,18 +1,23 @@
-import React from 'react'
-import { localStorageCall } from '../../utils/LocalStorageCall'
+import React from 'react';
+import { localStorageCall } from '../../utils/LocalStorageCall';
+import { Class } from '../../constants/Components';
 
 const Classes = () => {
-  const user = localStorageCall('auth_user')
-  const classes = user?.Classes || [] // Use optional chaining to handle undefined
-  console.log(classes)
+  const user = localStorageCall('auth_user');
+  const classes = user?.Classes || []; // Use optional chaining to handle undefined
+  
+  console.log(classes);
 
   return (
-    <div className='classes'>
-      {classes.map(classItem => (
-        <div className='class' key={classItem.classId}>{classItem.name}</div>
+    <div className="classes">
+      {classes.map((classItem) => (
+        <Class 
+          key={classItem.classId}
+          item={classItem} 
+        />
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default Classes
+export default Classes;

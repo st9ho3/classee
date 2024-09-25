@@ -14,7 +14,8 @@ overflow-y: hidden;
   padding: .8rem;
   display: flex;
   flex-direction: column;
-  color:rgb(106, 106, 109)
+  color:rgb(106, 106, 109);
+  
   
 }
 button {
@@ -59,8 +60,13 @@ form{
 }
 .authUserReminder {
   position: absolute;
-  top: -1.5rem;
-  right: 0;
+  top: 0;
+  left: 0;
   font-size: .8rem;
+}
+.mainDashboard {
+  width: 100%;
+  height: 100%;
+  
 }
 

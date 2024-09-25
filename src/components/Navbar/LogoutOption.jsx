@@ -7,7 +7,6 @@ const LogoutOption = ({setAuthUser}) => {
   const {authUser} =useContext(totalContext)
   return (
     <div className='navOpt logout'>
-      <h4 className='authUserReminder'>Welcome {authUser.Email.slice(0,4)}</h4>
       <IoIosLogOut className='teacherBoardIcon' onClick={() => {setAuthUser(false)}}/>
     </div>
   )

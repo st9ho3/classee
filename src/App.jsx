@@ -1,12 +1,24 @@
-import { LoggedUser, Registration, RegistrationOption, Login, LoginOption,LogoutOption } from "./constants/Components";
+import { 
+  LoggedUser, 
+  Registration, 
+  RegistrationOption, 
+  Login, 
+  LoginOption, 
+  LogoutOption 
+} from "./constants/Components";
+
 import { createContext, useEffect, useState } from "react";
 import { logout } from "./utils/Auth";
 import { localStorageCall } from "./utils/LocalStorageCall";
+import { style_1, style_2 } from "./utils/ModalPopUp";
 
 export const totalContext = createContext();
 
 function App() {
-  const AUTH = localStorage.getItem('auth_user') ? localStorageCall('auth_user') : false
+  const AUTH = localStorage.getItem('auth_user') 
+    ? localStorageCall('auth_user') 
+    : false;
+    
   const [authUser, setAuthUser] = useState(AUTH);
   const [page, setPage] = useState(false);
 
@@ -17,10 +29,10 @@ function App() {
   const close = (name) => {
     setPage({ [name]: false });
   };
+
   useEffect(() => {
-    logout(authUser)
-  }, [authUser])
-  
+    logout(authUser);
+  }, [authUser]);
 
   return (
     <totalContext.Provider value={{ toggle, page, close, authUser }}>
@@ -28,19 +40,19 @@ function App() {
         className="layout"
         style={
           !page.Registration || !page.Login
-            ? { display: 'flex', justifyContent: 'center', alignItems: 'center' }
+            ? style_1
             : null
         }
       >
         {!page.Registration && !page.Login && !authUser && (
-          <div style={{display:'flex', gap: '2rem'}}>
+          <div style={style_2}>
             <RegistrationOption />
             <LoginOption />
           </div>
         )}
         {page.Registration && <Registration />}
         {page.Login && <Login />}
-        {authUser  && <LoggedUser />}
+        {authUser && <LoggedUser />}
         {authUser && <LogoutOption setAuthUser={setAuthUser} />}
       </div>
     </totalContext.Provider>

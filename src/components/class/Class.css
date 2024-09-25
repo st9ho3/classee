@@ -1,11 +1,13 @@
 .classes {
     padding: 1rem;
-    width: 90%;
+    width: 85%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1rem;
     padding-top: 2rem;
     padding-right: 6rem;
+    border-radius: 12px;
+    background-color: white;
     
 }
 .class {
@@ -18,3 +20,54 @@
     border: solid thin rgb(232, 233, 247);
     margin-left: 3.8rem;
 }
+.class:hover {
+    transform: translateY(-.1rem);
+    transition: .7s;
+}
+.classTitle {
+    margin-top: .3rem;
+    margin-left: 1rem;
+}
+.studentNumber{
+    position: absolute;
+    top: .5rem;
+    right: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    font-size: .9rem;
+}
+.studentNumbers{
+
+}
+.studentNumnerIcon{
+    font-size: 1.1rem;
+}
+.border {
+    position: absolute;
+    bottom: 1.7rem;
+    left: 2rem;
+    width: 12rem;
+    opacity: .4;
+}
+.locationClass {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: .2rem;
+position: absolute;
+bottom: 0.3rem;
+right: 1.2rem;
+font-size: .8rem;
+}
+.dot {
+width: 9px;
+height: 9px;
+background-color: rgb(7, 205, 7);
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+

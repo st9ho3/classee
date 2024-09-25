@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { ClassForm } from '../../constants/Components';
 import { createDate } from '../../utils/CreateDate';
-import { updateClasses } from '../../utils/LocalStorageCall';
+import { localStorageCall, updateClasses } from '../../utils/LocalStorageCall';
 import { nanoid } from 'nanoid';
 import { capitalizeWord } from '../../utils/StringCheck';
 
 const CreateClass = () => {
   const dateOfCreation = createDate();
+  const auth_user = localStorageCall('auth_user')
 
   const [classDetails, setClassDetails] = useState({
     classId: nanoid(),
     name: '',
     subject: [],
     students: [],
-    dateCreated: dateOfCreation,
-    dateUpdated: dateOfCreation,
+    dateCreated: '',
+    dateUpdated: '',
     performance: '',
     professor: '',
     schedule: '',
@@ -56,7 +57,8 @@ const CreateClass = () => {
       ...classDetails,
       subject: subjects,
       dateCreated: dateOfCreation,
-      dateUpdated: dateOfCreation
+      dateUpdated: dateOfCreation,
+      professor: auth_user.UserName
     })}, [subjects]);
 
   return (
