@@ -6,7 +6,6 @@ const Classes = () => {
   const user = localStorageCall('auth_user');
   const classes = user?.Classes || []; // Use optional chaining to handle undefined
   
-  console.log(classes);
 
   return (
     <div className="classes">

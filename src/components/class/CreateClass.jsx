@@ -15,7 +15,7 @@ const CreateClass = () => {
 
   const [tempStudentIds,setTempIds] = useState([])
   const [subjects, setSubjects] = useState([]);
-
+  console.log(tempStudentIds)
   const [classDetails, setClassDetails] = useState({
     classId: nanoid(),
     name: '',
@@ -44,6 +44,8 @@ const CreateClass = () => {
     const result = tempStudentIds.includes(id)
     !result &&
     setTempIds([...tempStudentIds, id])
+    result &&
+    setTempIds(tempStudentIds.filter((Id) => Id !== id)) 
   }
 
   const createClass = () => {
