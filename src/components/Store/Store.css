@@ -21,6 +21,7 @@
     opacity: .3;
 }
 .showroom {
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -34,10 +35,12 @@
     overflow-x: hidden; 
 }
 .showroom.bigger {
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 0;
     column-gap: 0;
+    overflow-y: scroll;
 }
 .closeButton {
     position: absolute;
