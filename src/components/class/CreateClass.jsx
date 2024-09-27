@@ -49,7 +49,7 @@ const CreateClass = () => {
   }
 
   const createClass = () => {
-    updateClasses(classDetails)
+    updateClasses(classDetails, tempStudentIds)
     setClassDetails({
       classId: nanoid(),
       name: '',
